@@ -37,7 +37,7 @@ endif
 TARGET_BOARD_PLATFORM := exynos4
 TARGET_SOC := exynos4210
 TARGET_BOOTLOADER_BOARD_NAME := smdk4210
-TARGET_BOARD_INFO_FILE := device/samsung/galaxys2att/board-info.txt
+TARGET_BOARD_INFO_FILE := device/samsung/i777/board-info.txt
 
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
@@ -50,7 +50,7 @@ BOARD_NAND_PAGE_SIZE := 4096 -s 128
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_BASE := 0x40000000
 BOARD_KERNEL_CMDLINE := console=ttySAC2,115200 consoleblank=0
-TARGET_PREBUILT_KERNEL := device/samsung/galaxys2att/zImage
+TARGET_PREBUILT_KERNEL := device/samsung/i777/zImage
 
 # Filesystem
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -116,9 +116,9 @@ BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # assert
-TARGET_OTA_ASSERT_DEVICE := galaxys2att,SGH-I777
+TARGET_OTA_ASSERT_DEVICE := i777,galaxys2att,SGH-I777
 
 # Use the non-open-source parts, if they're present
--include vendor/samsung/galaxys2att/BoardConfigVendor.mk
+-include vendor/samsung/i777/BoardConfigVendor.mk
 
-BOARD_CUSTOM_BOOTIMG_MK := device/samsung/galaxys2att/shbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/samsung/i777/shbootimg.mk

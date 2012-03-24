@@ -22,11 +22,11 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),galaxys2att)
+ifeq ($(TARGET_DEVICE),i777)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := galaxys2att_hdcp_keys
+LOCAL_MODULE := i777_hdcp_keys
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := FAKE
 LOCAL_MODULE_SUFFIX := -timestamp

@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_galaxys2att.mk
+    $(LOCAL_DIR)/full_i777.mk
