@@ -115,8 +115,14 @@ BOARD_USES_MMCUTILS := true
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 
+# MFC
+BOARD_NONBLOCK_MODE_PROCESS := true
+BOARD_USE_STOREMETADATA := true
+BOARD_USE_METADATABUFFERTYPE := true
+BOARD_USES_MFC_FPS := true
+
 # assert
-TARGET_OTA_ASSERT_DEVICE := i777,galaxys2att,SGH-I777
+TARGET_OTA_ASSERT_DEVICE := i777,galaxys2att,SGH-I777,galaxys2
 
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/i777/BoardConfigVendor.mk
