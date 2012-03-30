@@ -22,6 +22,7 @@ COMMON=galaxys2-common
 MANUFACTURER=samsung
 
 mkdir -p ../../../vendor/$MANUFACTURER/$DEVICE_PROPRIETARIES/proprietary
+mkdir -p ../../../vendor/$MANUFACTURER/$DEVICE/
 mkdir -p ../../../vendor/$MANUFACTURER/$COMMON/proprietary
 
 # RIL
@@ -266,7 +267,7 @@ EOF
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__COMMON__/proprietary/libTVOut.so:obj/lib/libTVOut.so \\
-    vendor/__MANUFACTURER__/__COMMON__/proprietary/hwcomposer/lib/libfimc.so:obj/lib/libfimc.so
+    vendor/__MANUFACTURER__/__COMMON__/proprietary/libfimc.so:obj/lib/libfimc.so
 
 # EGL
 PRODUCT_COPY_FILES += \\
