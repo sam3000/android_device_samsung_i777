@@ -45,21 +45,12 @@ $(LOCAL_BUILT_MODULE):
 	$(hide) ln -sf $(HDCP_KEYS_FILE) $(SYMLINK)
 	$(hide) touch $@
 
-#Common GalaxyS2 binaries
-#Make this work!
-#COMMON_GALAXYS2_DIRS := camera DeviceSettings gpswrapper tvout tvouthack
-#$(foreach common_galaxys2_dirs,$(COMMON_GALAXYS2_DIRS), \
-#  $(if $($(common_galaxys2_dirs)), \
-#    include device/samsung/galaxys2/$(common_galaxys2_dirs)/Android.mk \
-#  ) \
-#  )
-
-include device/samsung/galaxys2/camera/Android.mk
-include device/samsung/galaxys2/DeviceSettings/Android.mk
-include device/samsung/galaxys2/gpswrapper/Android.mk
-include device/samsung/galaxys2/tvout/Android.mk
-include device/samsung/galaxys2/tvouthack/Android.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
+
+# Common GalaxyS2 binaries
+
+COMMON_GALAXYS2_DIRS := camera DeviceSettings gpswrapper tvout tvouthack
+include $(foreach gs2dir,$(COMMON_GALAXYS2_DIRS),device/samsung/galaxys2/$(gs2dir)/Android.mk)
 
 endif
