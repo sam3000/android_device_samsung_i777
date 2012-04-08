@@ -53,7 +53,7 @@ PRODUCT_COPY_FILES += \
 
 # Kernel modules for ramdisk
 RAMDISK_MODULES := $(addprefix device/samsung/i777/modules/,dhd.ko \
-	scsi_wait_scan.ko Si4709_driver.ko)
+	scsi_wait_scan.ko)
 PRODUCT_COPY_FILES += $(foreach module,\
 	$(RAMDISK_MODULES),\
 	$(module):root/lib/modules/$(notdir $(module)))
