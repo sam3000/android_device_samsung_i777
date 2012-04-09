@@ -125,7 +125,7 @@ BOARD_USES_MFC_FPS := true
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/galaxys2/overlay/include
 
 # assert
-TARGET_OTA_ASSERT_DEVICE := i777,galaxys2att,SGH-I777,galaxys2
+TARGET_OTA_ASSERT_DEVICE := i777,galaxys2att,SGH-I777
 
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/i777/BoardConfigVendor.mk
