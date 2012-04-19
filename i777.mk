@@ -51,22 +51,6 @@ PRODUCT_COPY_FILES += \
     device/samsung/i777/usr/idc/qwerty2.idc:system/usr/idc/qwerty2.idc \
     device/samsung/i777/usr/idc/sec_touchscreen.idc:system/usr/idc/sec_touchscreen.idc
 
-# Kernel modules for ramdisk
-RAMDISK_MODULES := $(addprefix device/samsung/i777/modules/,dhd.ko \
-	scsi_wait_scan.ko)
-PRODUCT_COPY_FILES += $(foreach module,\
-	$(RAMDISK_MODULES),\
-	$(module):root/lib/modules/$(notdir $(module)))
-
-# Other kernel modules not in ramdisk
-PRODUCT_COPY_FILES += $(foreach module,\
-	$(filter-out $(RAMDISK_MODULES),$(wildcard device/samsung/i777/modules/*.ko)),\
-	$(module):system/lib/modules/$(notdir $(module)))
-
-# The kernel itself
-PRODUCT_COPY_FILES += \
-    device/samsung/i777/zImage:kernel
-
 # NFC
 PRODUCT_PACKAGES += \
 	libnfc \
