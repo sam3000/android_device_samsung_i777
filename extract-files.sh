@@ -76,9 +76,6 @@ adb pull /system/usr/share/alsa/pcm/surround50.conf ../../../vendor/$MANUFACTURE
 adb pull /system/usr/share/alsa/pcm/surround51.conf ../../../vendor/$MANUFACTURER/$DEVICE_PROPRIETARIES/proprietary/surround51.conf
 adb pull /system/usr/share/alsa/pcm/surround71.conf ../../../vendor/$MANUFACTURER/$DEVICE_PROPRIETARIES/proprietary/surround71.conf
 
-# NFC
-adb pull /system/vendor/firmware/libpn544_fw.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libpn544_fw.so
-
 # EGL
 adb pull /system/lib/hw/gralloc.exynos4.so ../../../vendor/$MANUFACTURER/$COMMON/proprietary/gralloc.exynos4.so
 adb pull /system/lib/egl/libEGL_mali.so ../../../vendor/$MANUFACTURER/$COMMON/proprietary/libEGL_mali.so
@@ -137,6 +134,12 @@ adb pull /system/etc/wifi/nvram_net.txt_murata_SG ../../../vendor/$MANUFACTURER/
 adb pull /system/etc/wifi/nvram_net.txt_murata_TN ../../../vendor/$MANUFACTURER/$COMMON/proprietary/nvram_net.txt_murata_TN
 adb pull /system/etc/wifi/nvram_net.txt_SG ../../../vendor/$MANUFACTURER/$COMMON/proprietary/nvram_net.txt_SG
 adb pull /system/etc/wifi/nvram_net.txt_TN ../../../vendor/$MANUFACTURER/$COMMON/proprietary/nvram_net.txt_TN
+
+# NFC
+adb pull /system/vendor/firmware/libpn544_fw.so ../../../vendor/$MANUFACTURER/$COMMON/proprietary/libpn544_fw.so
+
+# MFC Firmware
+adb pull /system/vendor/firmware/mfc_fw.bin ../../../vendor/$MANUFACTURER/$COMMON/proprietary/mfc_fw.bin
 
 # LPM
 adb pull /system/bin/immvibed ../../../vendor/$MANUFACTURER/$COMMON/proprietary/immvibed
@@ -247,10 +250,6 @@ PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/surround51.conf:system/usr/share/alsa/pcm/surround51.conf \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/surround71.conf:system/usr/share/alsa/pcm/surround71.conf
 
-# NFC
-PRODUCT_COPY_FILES += \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so
-
 EOF
 
 
@@ -340,6 +339,14 @@ PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__COMMON__/proprietary/nvram_net.txt_murata_TN:system/etc/wifi/nvram_net.txt_murata_TN \\
     vendor/__MANUFACTURER__/__COMMON__/proprietary/nvram_net.txt_SG:system/etc/wifi/nvram_net.txt_SG \\
     vendor/__MANUFACTURER__/__COMMON__/proprietary/nvram_net.txt_TN:system/etc/wifi/nvram_net.txt_TN
+
+# NFC
+PRODUCT_COPY_FILES += \\
+    vendor/__MANUFACTURER__/__COMMON__/proprietary/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so
+
+# MFC Firmware
+PRODUCT_COPY_FILES += \\
+    vendor/__MANUFACTURER__/__COMMON__/proprietary/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin
 
 # LPM
 PRODUCT_COPY_FILES += \\
