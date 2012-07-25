@@ -62,27 +62,23 @@ PRODUCT_PACKAGES += \
 	libnfc \
 	libnfc_jni \
 	Nfc \
+	nfc.exynos4 \
 	Tag
 
 # Commands to migrate prefs from com.android.nfc3 to com.android.nfc
-PRODUCT_COPY_FILES += \
-	packages/apps/Nfc/migrate_nfc.txt:system/etc/updatecmds/migrate_nfc.txt
+PRODUCT_COPY_FILES += $(call add-to-product-copy-files-if-exists,\
+packages/apps/Nfc/migrate_nfc.txt:system/etc/updatecmds/migrate_nfc.txt)
 
 # file that declares the MIFARE NFC constant
 PRODUCT_COPY_FILES += \
-	device/sample/nxp/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml
+	frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml
 
 # NFC EXTRAS add-on API
 PRODUCT_PACKAGES += \
 	com.android.nfc_extras
-
 PRODUCT_COPY_FILES += \
-	frameworks/native/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
-	frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml
-
-# NFC
-PRODUCT_PACKAGES += \
-	nfc.exynos4
+	frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
+	frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
 
 # NFCEE access control
 ifeq ($(TARGET_BUILD_VARIANT),user)
