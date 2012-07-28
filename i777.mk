@@ -74,7 +74,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/usr/idc/sec_touchscreen.idc:system/usr/idc/sec_touchscreen.idc
 
 # init.smdk4210.rc
-PRODUCT_COPY_FILES := \
+PRODUCT_COPY_FILES += \
     device/samsung/galaxys2-common/init.smdk4210.rc:root/init.smdk4210.rc
 
 # NFC
