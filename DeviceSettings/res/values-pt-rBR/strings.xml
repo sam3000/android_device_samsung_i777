@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Config. Galaxy S II</string>
-    <string name="category_screen_title">Tela</string>
     <string name="screen_colors_title">Cores</string>
     <string name="mdnie_scenario_title_head">Cenário</string>
     <string name="mdnie_scenario_summary_head">Define o Cenário mDNIe</string>
@@ -22,13 +21,6 @@
     <string name="touchkey_timeout_title_head">Tempo limite da luz de fundo</string>
     <string name="touchkey_timeout_summary_head">Quanto tempo a luz de fundo irá ficar acesa depois do botão ser pressionado</string>
     <string name="category_sensors_title">Sensores</string>
-    <string name="accelerometer_subcat_title">Acelerômetro</string>
-    <string name="use_accelerometer_calibration_title_head">Usar dados de calibragem</string>
-    <string name="use_accelerometer_calibration_summary_head">Usa os valores dos dados de calibragem. Calibre após marcar isto!</string>
-    <string name="calibrate_accelerometer_title_head">Calibrar</string>
-    <string name="calibrate_accelerometer_summary_head">Coloque seu telefone em uma superfície plana, e pressione isto para calibrar</string>
-    <string name="accelerometer_dialog_head">Calibragem terminada</string>
-    <string name="accelerometer_dialog_message">O sensor foi calibrado com sucesso.</string>
     <string name="category_haptic_title">Resposta Tátil</string>
     <string name="vibrator_subcat_title">Vibração</string>
     <string name="vibrator_intensity_title_head">Intensidade da Vibração</string>
@@ -36,6 +28,14 @@
     <string name="category_radio_title">Rádio</string>
     <string name="hspa_title_head">HSPA</string>
     <string name="hspa_summary_head">Ativa HSDPA/HSUPA</string>
+    <string name="category_screen_title">Tela</string>
+    <string name="accelerometer_subcat_title">Acelerômetro</string>
+    <string name="use_accelerometer_calibration_title_head">Usar dados de calibragem</string>
+    <string name="use_accelerometer_calibration_summary_head">Usa os valores dos dados de calibragem. Calibre após marcar isto!</string>
+    <string name="calibrate_accelerometer_title_head">Calibrar</string>
+    <string name="calibrate_accelerometer_summary_head">Coloque seu telefone em uma superfície plana, e pressione isto para calibrar</string>
+    <string name="accelerometer_dialog_head">Calibragem terminada</string>
+    <string name="accelerometer_dialog_message">O sensor foi calibrado com sucesso.</string>
     <string name="category_dock_title">Dock</string>
     <string name="dockaudio_subcat_title">Áudio</string>
     <string name="use_dock_audio_title_head">Usar Áudio USB do Dock</string>
