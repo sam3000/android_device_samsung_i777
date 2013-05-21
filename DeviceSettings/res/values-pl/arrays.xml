@@ -1,19 +1,20 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <string-array name="mdnie_scenario_entries">
-        <item>Kamera (domyślnie)</item>
+        <item>CyanogenMod (domyślnie)</item>
+        <item>UI</item>
         <item>Wideo</item>
         <item>Ciepły film</item>
         <item>Zimny film</item>
-        <item>UI</item>
+        <item>Kamera</item>
         <item>Nawigacja</item>
         <item>Galeria</item>
         <item>VT</item>
     </string-array>
 
     <string-array name="mdnie_mode_entries">
-        <item>Dynamicznie (domyślnie)</item>
-        <item>Standardowo</item>
+        <item>Dynamicznie</item>
+        <item>Standardowo (domyślnie)</item>
         <item>Naturalnie</item>
         <item>Film</item>
     </string-array>
@@ -50,7 +51,7 @@
         <item>100%</item>
     </string-array>
 
-    <string-array name="hspa_entries">
+   <string-array name="hspa_entries">
         <item>Tylko UMTS</item>
         <item>Tylko HSDPA</item>
         <item>HSDPA + HSUPA</item>

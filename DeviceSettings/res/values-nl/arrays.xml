@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 The CyanogenMod Project
+<!-- Copyright (C) 2012-2013 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,21 +13,21 @@
      See the License for the specific language governing permissions and
      limitations under the License.
  -->
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string-array name="mdnie_scenario_entries">
-        <item>Camera (standaard)</item>
+        <item>CyanogenMod (Standaard)</item>
+        <item>Uiterlijk</item>
         <item>Video</item>
         <item>Video (warm)</item>
         <item>Video (koud)</item>
-        <item>Uiterlijk</item>
+        <item>Camera</item>
         <item>Navigatie</item>
         <item>Galerij</item>
         <item>VT</item>
     </string-array>
     <string-array name="mdnie_mode_entries">
-        <item>Standaard</item>
         <item>Dynamisch</item>
+        <item>Standaard (Standaard)</item>
         <item>Natuurlijk</item>
         <item>Film</item>
     </string-array>

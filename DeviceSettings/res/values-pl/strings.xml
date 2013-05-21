@@ -27,7 +27,7 @@
 
     <string name="category_sensors_title">Czujniki</string>
     <string name="accelerometer_subcat_title">Akcelerometr</string>
-    <string name="use_accelerometer_calibration_title_head">Używaj danych z kalibracjih</string>
+    <string name="use_accelerometer_calibration_title_head">Używaj danych z kalibracji</string>
     <string name="use_accelerometer_calibration_summary_head">Używaj danych z kalibracji akcelerometru. Wykonaj kalibrację po zaznaczeniu tej opcji!</string>
     <string name="calibrate_accelerometer_title_head">Kalibruj</string>
     <string name="calibrate_accelerometer_summary_head">Połóż telefon na płaskiej powierzchni i naciśnij to, aby skalibrować</string>
