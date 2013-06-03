@@ -28,8 +28,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/i777/bluetooth
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
 TARGET_KERNEL_CONFIG := cyanogenmod_i777_defconfig
 
-TARGET_SPECIFIC_HEADER_PATH += device/samsung/i777/overlay/include
-
 # assert
 TARGET_OTA_ASSERT_DEVICE := i777,SGH-I777,SGH-S959G
 
